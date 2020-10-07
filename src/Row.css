@@ -1,0 +1,36 @@
+.row{
+    color: white;
+    margin-left: 20px;
+}
+
+.row__posters{
+    display: flex;
+    overflow-y: hidden;/*To avoid any vertical scroll*/
+    overflow-x: scroll;/*to make images scroll horizontally*/
+    padding:20px;
+}
+
+/* To tell all browsers not to show the scrollbar but keep the functionality */
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row__poster {
+    width: 100%;
+    object-fit: contain; /* sets the aspect ratio images looks better */
+    max-height: 100px;
+    transition: transform 450ms;/*Used in combination with transform  so that the growing effect looks smooth*/
+    margin-right: 10px; 
+}
+
+.row__posterLarge{
+    max-height: 250px;
+}
+
+.row__poster:hover{
+    transform: scale(1.08);/*To add growing effect to images*/
+}
+
+.row__posterLarge:hover{
+    transform: scale(1.09)
+}
