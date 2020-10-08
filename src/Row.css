@@ -28,6 +28,7 @@
 }
 
 .row__poster:hover{
+    cursor: pointer;
     transform: scale(1.08);/*To add growing effect to images*/
 }
 
